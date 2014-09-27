@@ -1,0 +1,14 @@
+.vlt
+.idea
+*.iml
+*.iws
+.DS_Store
+
+*.dir
+*.tmp
+target/
+**/quickstart/*
+
+.project
+.settings
+.classpath
