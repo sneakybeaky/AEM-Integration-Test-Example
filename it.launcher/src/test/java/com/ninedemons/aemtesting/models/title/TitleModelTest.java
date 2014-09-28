@@ -54,7 +54,7 @@ public class TitleModelTest extends SlingTestBase {
         RequestExecutor result = getRequestExecutor().execute(
                 getRequestBuilder().buildGetRequest(
                         PATH_TO_TEST_NODE + ".html").withCredentials(
-                        "admin", "admin"));
+                        this.getServerUsername(), this.getServerPassword()));
 
         // Then the model should return the values defined in the instance node
         result.assertStatus(200)
