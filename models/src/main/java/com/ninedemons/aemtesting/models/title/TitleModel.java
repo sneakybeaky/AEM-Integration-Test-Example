@@ -23,13 +23,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A model for the Title component
+ * A model for the Title component.
+ *
+ * This is a drop in replacement for the auto-generated title.js javascript model the maven archetype creates.
  */
 
 @Model(adaptables = SlingHttpServletRequest.class)
 public class TitleModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(TitleModel.class);
+
+    /** TODO This model has knowledge about the HTML elements to use when rendering the title. This violates separation
+     *  of concerns between a model and the rendering layer. This part of the model should be embedded in the sightly
+     *  markup, not here.
+     */
 
     /**
      * The default HTML element to use when none explicitly set
