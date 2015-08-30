@@ -460,11 +460,6 @@
         </dependency>
         <dependency>
         	<groupId>com.ninedemons.aemtesting</groupId>
-        	<artifactId>example.it.tests</artifactId>
-        	<version>${project.version}</version>
-        </dependency>
-        <dependency>
-        	<groupId>com.ninedemons.aemtesting</groupId>
         	<artifactId>example.core</artifactId>
         	<version>${project.version}</version>
         </dependency>
